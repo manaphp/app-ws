@@ -1,0 +1,9 @@
+/vendor
+/data
+/tmp
+/.env
+/.idea
+/*.tar
+/*.zip
+/*.bak
+/app/Controllers/TestController.php
