@@ -1,6 +1,6 @@
 {
-  "name": "manaphp/app-user",
-  "description": "ManaPHP User Application",
+  "name": "manaphp/app-ws",
+  "description": "ManaPHP WS Application",
   "type": "project",
   "require": {
     "manaphp/framework": "dev-master"
