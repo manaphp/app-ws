@@ -9,5 +9,5 @@ services:
       - /data/volumes/${COMPOSE_PROJECT_NAME}/ws/tmp:/var/www/html/tmp
     command: php -d opcache.enable_cli=on /var/www/html/public/index.php
     ports:
-      - ${WS_PORT}:85
+      - ${WS_PORT}:9501
     restart: always

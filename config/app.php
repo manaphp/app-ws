@@ -11,9 +11,12 @@ return [
     'aliases' => [
     ],
     'components' => [
-        '!wsServer' => ['worker_num' => 2],
+        '!wsServer' => ['port' => 9501, 'worker_num' => 2],
         'db' => [env('DB_URL')],
         'redis' => [env('REDIS_URL')],
         'logger' => ['level' => env('LOGGER_LEVEL', 'info')],
     ],
+    'plugins' => [
+        'tracer'
+    ]
 ];
