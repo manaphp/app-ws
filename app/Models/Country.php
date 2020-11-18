@@ -1,11 +1,13 @@
 <?php
+
 namespace App\Models;
 
 /**
  * Class Country
+ *
  * @property-read \App\Models\City $cities
  */
-class Country extends \ManaPHP\Db\Model
+class Country extends \ManaPHP\Data\Db\Model
 {
     public $country_id;
     public $country;
