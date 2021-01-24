@@ -15,13 +15,23 @@ class PushCommand extends Command
     }
 
     /**
-     * @param string $name
+     * @param string $room
      * @param string $message
      * @param string $endpoint
      */
-    public function roleAction($name = 'admin', $message = 'role_msg', $endpoint = null)
+    public function roomAction($room = 'meeting', $message = 'room_msg', $endpoint = null)
     {
-        $this->wspClient->pushToRole($name, $message, $endpoint);
+        $this->wspClient->pushToRoom($room, $message, $endpoint);
+    }
+
+    /**
+     * @param string $role
+     * @param string $message
+     * @param string $endpoint
+     */
+    public function roleAction($role = 'admin', $message = 'role_msg', $endpoint = null)
+    {
+        $this->wspClient->pushToRole($role, $message, $endpoint);
     }
 
     /**
